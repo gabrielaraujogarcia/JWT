@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
-import java.util.Arrays;
 
 @SpringBootApplication
 @RestController
@@ -19,9 +18,9 @@ public class ProductAppApplication {
 	}
 
 	@GetMapping(path = "/logout")
-	public String logout(HttpServletRequest request) throws ServletException {
+	public ResponseEntity<?> logout(HttpServletRequest request) throws ServletException {
 		request.logout();
-		return "/";
+		return ResponseEntity.ok().build();
 	}
 
 }

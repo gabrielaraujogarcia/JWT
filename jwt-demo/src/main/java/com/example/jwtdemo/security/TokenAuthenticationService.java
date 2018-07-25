@@ -12,11 +12,11 @@ import java.util.Date;
 
 public class TokenAuthenticationService {
 
-    // EXPIRATION_TIME PARA 1 HORA
-//    static final long EXPIRATION_TIME = 3600000;
+    //EXPIRATION_TIME PARA 1 HORA
+    static final long EXPIRATION_TIME = 3600000;
 
     //EXPIRATION_TIME PARA 1 MINUTO
-    static final long EXPIRATION_TIME = 60000;
+//    static final long EXPIRATION_TIME = 60000;
 
     static final String SECRET = "MySecret";
     static final String TOKEN_PREFIX = "Bearer";
